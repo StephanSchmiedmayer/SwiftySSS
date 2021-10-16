@@ -46,7 +46,7 @@ public class Secret {
     /**
      An Invidivual Secret Share
      */
-    public struct Share: CustomStringConvertible, Hashable {
+    public struct Share: CustomStringConvertible, Hashable, Codable, Equatable {
         
         let point: UInt8
         var bytes: [UInt8]
